@@ -1,0 +1,226 @@
+.Board {
+  position: absolute;
+  top: 12vh;
+  left: 20vw;
+  width: 75vw;
+  height: auto;
+  padding: 2px;
+  border: 2px solid rgb(211, 224, 211);
+}
+
+.AddRestaurantForm {
+  padding: 20px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: bold;
+}
+
+.formGroup input[type="text"],
+.formGroup select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formGroup select {
+  appearance: none;
+  padding: 8px 30px 8px 8px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23424242' width='18px' height='18px'%3E%3Cpath d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z'/%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 12px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Add_abn.css */
+
+.add-subscription {
+  position: absolute;
+  top: 12vh;
+  left: 19vw;
+  width: 75vw;
+  height: auto;
+  padding: 2px;
+  border: 2px solid rgb(211, 224, 211);
+}
+
+.add-subscription-form {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-subscription-form h2 {
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: bold;
+}
+
+.formGroup select,
+.formGroup input[type="text"],
+.formGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.formGroup textarea {
+  height: 100px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/*historiques abonements*/
+
+.HistoriquesAbn {
+  position: absolute;
+  top: 12vh;
+  left: 19vw;
+  width: 78vw;
+  height: auto;
+  padding: 2px;
+  border: 2px solid rgb(211, 224, 211);
+}
+
+
+.abonnement-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.abonnement {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.abonnement-details {
+  flex: 1;
+}
+
+.abonnement-countdown {
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.abonnement h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.abonnement p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.abonnement-countdown p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/*activer abn*/
+.ActiverAbn {
+  position: absolute;
+  top: 12vh;
+  left: 19vw;
+  width: 78vw;
+  height: auto;
+  padding: 2px;
+  border: 2px solid rgb(211, 224, 211);  
+}
+
+.ActiverAbn h2 {
+  margin-bottom: 20px;
+}
+
+.ActiverAbn form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.ActiverAbn .formGroup {
+  margin-bottom: 20px;
+}
+
+.ActiverAbn label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.ActiverAbn input[type="text"],
+.ActiverAbn input[type="date"],
+.ActiverAbn select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ActiverAbn button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.ActiverAbn button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .ActiverAbn form {
+      width: 100%;
+  }
+}

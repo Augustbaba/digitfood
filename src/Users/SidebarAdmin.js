@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Logo from '../assets/Fwd_ le logo transparent/3.png';
-import '../styles/Sidebar.css';
+import '../styles/SidebarAdmin.css';
 import { useNavigate } from "react-router-dom";
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import BarChartIcon from '@mui/icons-material/BarChart';
@@ -12,9 +12,14 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import HelpIcon from '@mui/icons-material/Help';
 import MenuIcon from '@mui/icons-material/Menu';
 
-function Sidebar() {
+function SidebarAdmin() {
     const navigate = useNavigate();
     const [menuOpen, setMenuOpen] = useState(false);
+    const [showOptions, setShowOptions] = useState(false);
+
+    const handleAbonement = () => {
+        setShowOptions(!showOptions); // Inverse l'état d'affichage des options
+    };
 
     const handleReport = () => {
         navigate('/Rapport');
@@ -23,18 +28,26 @@ function Sidebar() {
     const handleDashboard = () => {
         navigate('/Dashboard');
     };
-
-    const handleSales = () => {
-        navigate('/Ventes');
+    
+    const handleAdd_abn = () => {
+        navigate('/Add_abn');
     };
-    const handleMessageResto = () => {
-        navigate('/MessageResto');
+    const handleShow_abn = () => {
+        navigate('/Historiques_abn');
+    };
+    const handleActive_abn = () => {
+        navigate('/Activer_abn');
+    };
+
+    const handleAdd_resto = () => {
+        navigate('/Add_resto');
     };
 
     const handleLogout = () => {
         localStorage.removeItem('kitchen');
         navigate('/');
     };
+   
 
     return (
         <div className="sidebar">
@@ -53,13 +66,26 @@ function Sidebar() {
                     <BarChartIcon className="Icons" />
                     <label onClick={handleReport}>Rapport</label>
                 </div>
-                <div>
-                    <PieChartIcon className="Icons" />
-                    <label onClick={handleSales}>Ventes</label>
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                    <div style={{ marginBottom: "10px", display: "flex", alignItems: "center" }}>
+                        <PieChartIcon className="Icons" onClick={handleAbonement} style={{ marginRight: "5px" }} />
+                        <label onClick={handleAbonement} style={{ fontSize: "16px", cursor: "pointer" }}>Abonnement</label>
+                    </div>
+                    {showOptions && (
+                        <div className="options" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                            <button onClick={handleAdd_abn} style={{ margin: "5px", fontSize: "14px" }}>Ajouter un abonnement</button>
+                            <button onClick={handleShow_abn} style={{ margin: "5px", fontSize: "14px" }}>Historique abonnement</button>
+                            <button onClick={handleActive_abn} style={{ margin: "5px", fontSize: "14px" }}>Activer un abonnement</button>
+                        </div>
+                    )}
                 </div>
+
+
+
+
                 <div>
                     <SettingsIcon className="Icons" />
-                    <label>Options</label>
+                    <label onClick={handleAdd_resto}>Ajouter un resto</label>
                 </div>
             </div>
             <div className="rightSidebar">
@@ -69,7 +95,7 @@ function Sidebar() {
                 </div>
                 <div>
                     <MessageIcon className="Icons" />
-                    <label onClick={handleMessageResto}>Message</label>
+                    <label>Message</label>
                 </div>
                 <div>
                     <LogoutIcon className="Icons" />
@@ -86,4 +112,4 @@ function Sidebar() {
     );
 }
 
-export default Sidebar;
+export default SidebarAdmin;

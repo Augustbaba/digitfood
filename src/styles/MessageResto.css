@@ -1,0 +1,53 @@
+.MessageResto {
+ 
+  position: absolute;
+  top: 12vh;
+  left: 20vw;
+  width: 78vw;
+  height: auto;
+  border: 2px solid rgb(194, 196, 194);
+}
+
+.Messages {
+  margin-top: 20px;
+}
+
+.Messag {
+  background-color: #f8f9fa;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MessageContent {
+  display: flex;
+  align-items: center;
+}
+
+.Sender {
+  margin-right: 10px;
+}
+
+.client {
+  background-color: #cce5ff;
+}
+
+.admin {
+  background-color: #d4edda;
+}
+
+.commande {
+  background-color: #fff3cd;
+}
+
+.ReplyButton {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

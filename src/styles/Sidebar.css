@@ -1,0 +1,138 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 19vw;
+    height: 100vh;
+    float: left;
+    background-color: #534135;
+    padding: 0; /* Supprime l'espace de remplissage */
+    margin: 0; /* Supprime les marges */
+    box-sizing: border-box; /* Inclure le remplissage et la bordure dans la largeur et la hauteur */
+}
+
+.sidebar-Logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 0; /* Aucun décalage en haut */
+    padding: 20px 0; /* Ajoute un espace de remplissage en haut et en bas */
+}
+
+.sidebar-Logo img {
+    width: 150px; /* Réduire la taille de l'image */
+    height: auto; /* Garantit que la hauteur est ajustée en conséquence */
+}
+
+.leftSidebar {
+    margin-top: 0; /* Aucun décalage en haut */
+    width: auto;
+    margin-bottom: 0; /* Aucun décalage en bas */
+    padding: 0; /* Supprime tout espace de remplissage */
+}
+
+.leftSidebar div {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Réduit la marge gauche */
+    color: white;
+    font-size: 18px; /* Réduit la taille de la police */
+    padding: 10px; /* Réduit l'espace de remplissage */
+    border-radius: 8px; /* Réduit le rayon de bordure */
+    width: auto;
+}
+
+.leftSidebar div:hover {
+    background-color: #6e5b49;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.Icons {
+    font-size: 24px; /* Réduit la taille de l'icône */
+    margin-right: 10px; /* Réduit l'espace entre l'icône et le texte */
+}
+
+.rightSidebar {
+    margin-top: 0; /* Aucun décalage en haut */
+    width: auto;
+    padding: 0; /* Supprime tout espace de remplissage */
+}
+
+.rightSidebar div {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Réduit la marge gauche */
+    color: white;
+    font-size: 18px; /* Réduit la taille de la police */
+    padding: 10px; /* Réduit l'espace de remplissage */
+    border-radius: 8px; /* Réduit le rayon de bordure */
+    width: auto;
+}
+
+.rightSidebar div:hover {
+    background-color: #6e5b49;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.Help {
+    margin-top: 20px;
+    width: auto;
+    padding: 0; /* Supprime tout espace de remplissage */
+}
+
+.Help div {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Réduit la marge gauche */
+    color: white;
+    font-size: 18px; /* Réduit la taille de la police */
+    padding: 10px; /* Réduit l'espace de remplissage */
+    border-radius: 8px; /* Réduit le rayon de bordure */
+    width: auto;
+}
+
+.Help div:hover {
+    background-color: #6e5b49;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
+    .sidebar-Logo {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .leftSidebar,
+    .rightSidebar,
+    .Help {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu-toggle span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px auto;
+    }
+
+    .menu-content {
+        display: block; /* Affiche le contenu du menu */
+    }
+    
+}

@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 82%;
+  height: 70px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre pour un aspect plus visuel */
+  z-index: 1000; /* Assure que le composant reste au-dessus des autres éléments */
+}
+
+.leftcontainer {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.rightcontainer {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 20px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.icons {
+  margin-right: 5px;
+}
+
+.Menu div {
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #534135;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Menu div:hover {
+  background-color: #6e5b49;
+}

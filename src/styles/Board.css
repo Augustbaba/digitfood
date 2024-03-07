@@ -1,0 +1,215 @@
+.Board {
+    position: absolute;
+    top: 12vh;
+    left: 19vw;
+    width: 80vw;
+    height: auto;
+    border: 2px solid rgb(211, 224, 211);
+}
+
+.PartOne {
+    border: 2px solid rgb(194, 187, 187);
+    width: 100%; /* Ajuster la largeur selon vos besoins */
+    height: auto; /* Remplacer la hauteur par la flex-basis pour utiliser Flexbox */
+    display: flex;
+}
+
+.Graph {
+    border: 1px solid;
+    border-radius: 15px;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    width: 80%; /* Occupe toute la largeur du conteneur parent */
+    height: auto; /* Occupe toute la hauteur du conteneur parent */
+}
+
+/* Si nécessaire, ajustez les marges pour l'espacement */
+
+
+.Message {
+    border: 1px solid orange;
+    border-radius: 15px;
+    margin-left: 4vw; /* Ajuster la marge gauche selon vos besoins */
+    margin-top: 2vh;
+    width: 45%;
+    height: 90%; /* Ajuster la hauteur selon vos besoins */
+}
+
+
+
+.PartTwo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.Gains,
+.Affairs_count,
+.Menu_Stats {
+    border: 2px solid #534135;
+    border-radius: 15px;
+    padding: 20px;
+    width: calc(33% - 20px); /* Pour prendre en compte la marge entre les éléments */
+    background-color: #F8F8F8; /* Couleur de fond */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.Gains label,
+.Affairs_count label,
+.Menu_Stats label {
+    font-size: 18px;
+    color: #534135;
+    font-weight: bold;
+}
+
+.Gains, .Affairs_count, .Menu_Stats {
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-right: 10px; /* Ajouter une marge à droite pour l'espacement */
+    width: 30%; /* Ajuster la largeur selon vos besoins */
+    height: 90%; /* Ajuster la hauteur selon vos besoins */
+    background: white;
+}
+
+.Gains {
+    border: 2px solid wheat;
+}
+
+.Gains label, .Affairs_count label {
+    color: black;
+    font-size: 25px;
+}
+
+.Affairs_count {
+    border: 2px solid blue;
+}
+
+.Menu_Stats {
+    border: 2px solid gold;
+    background: #534135;
+}
+
+.Menu_Stats label {
+    color: white;
+    font-size: 25px;
+}
+.Message {
+    border: 2px solid orange;
+    border-radius: 15px;
+    margin-top: 2vh;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.Head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.Head h2 {
+    color: #534135;
+    font-size: 24px;
+}
+
+.Head label {
+    color: rgb(234, 234, 240);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.MessageContainer {
+    max-height: 300px; /* Ajustez la hauteur maximale selon vos besoins */
+    overflow-y: auto; /* Ajoutez une barre de défilement verticale si nécessaire */
+}
+
+.MessageContent {
+    margin-bottom: 20px;
+}
+
+.MessageContent h3 {
+    font-size: 18px;
+    color: #534135;
+    margin-bottom: 5px;
+}
+
+
+
+.MessageContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5px;
+    background: #ece6e2;
+    border-radius: 7%;
+}
+
+.FirstElement {
+    /* Style pour l'image bien encerclée */
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 40px; /* Ajustez la taille selon vos besoins */
+    height: 40px; /* Ajustez la taille selon vos besoins */
+    display: flex;
+    
+    
+}
+
+.FirstElement img {
+    max-width: 100%; /* Pour s'assurer que l'image ne dépasse pas le cercle */
+    max-height: 100%; /* Pour s'assurer que l'image ne dépasse pas le cercle */
+    border-radius: 50%; /* Pour rendre l'image circulaire */
+}
+
+.SecondElement {
+    display: flex;
+    flex-direction: column;
+}
+
+.HorizontalDiv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espacement entre les éléments */
+}
+
+.ThirdElement {
+    /* Style pour le conteneur de la date */
+}
+
+
+
+
+.DollarIcon {
+    width: 30px; /* Ajustez la taille de l'image selon vos besoins */
+    height: auto;
+    margin-right: 10px; /* Ajoute une marge à droite de l'image pour l'espace */
+}
+
+.GainsContent {
+    flex-grow: 1; /* Le contenu prendra autant d'espace que possible */
+    margin-left: 10px; /* Ajoute une marge à gauche pour séparer l'image et le contenu */
+}
+
+.HorizontalDiv {
+    margin-bottom: 10px; /* Ajoute une marge en bas pour séparer les éléments horizontaux */
+}
+
+.HorizontalDiv h2{
+    font-size: 50px; /* Taille de police pour le titre */
+    margin-bottom: 5px; /* Ajoute une marge en bas pour séparer le titre et le contenu */
+    margin-left: 50px;
+    color: blue;
+}
+.HorizontalDiv h3 {
+    font-size: 15px; /* Taille de police pour le titre */
+    margin-bottom: 5px; /* Ajoute une marge en bas pour séparer le titre et le contenu */
+    
+    color: rgb(252, 119, 212);
+}
+
+
+.HorizontalDiv label {
+    font-size: 14px; /* Taille de police pour le contenu */
+    color: #333; /* Couleur de texte pour le contenu */
+}

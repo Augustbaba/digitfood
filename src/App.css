@@ -1,0 +1,98 @@
+.auth-form-container, .register-form {
+  display: flex;
+  flex-direction: column;
+  font-family: TT Blues Screen;
+}
+
+.auth-form-container {
+  /* backdrop-filter: blur(5px); */
+  margin: 0.5rem;
+  margin-top: 10rem;
+  padding: 5rem;
+  border: 1px solid white;
+  border-radius: 15px; 
+  width: auto;
+}
+
+.auth-form-container h2 {
+  color: white;
+}
+
+.auth-form-container label {
+  text-align: left;
+  margin: 0.25rem 0;
+  margin-top: 15px;
+  /* color: #f58115; */
+  color: #ffd396;
+  font-size: 20px;
+}
+
+.auth-form-container input {
+  margin: 0.25rem 0;
+  margin-top: 15px;
+  padding: 1rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 15px;
+  width: auto;
+  border: none;
+}
+
+.auth-form-container button {
+  border: none;
+  background-color: gray;
+  color: black;
+  margin-top: 40px;
+  cursor: pointer;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.register-form button:hover {
+  /* background-color: #f58115; */
+  background-color: #ffd396;
+  border-radius: 45px;
+  transition: 1s;
+}
+
+.Food {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0vw;
+  top: 45vh;
+  width: 100vw;
+}
+
+.leftarrow {
+  display: flex;
+  justify-content: left;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-left: 5vw;
+  padding-bottom: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 10px;
+  width: auto;
+  color: white;
+  background-color: black;
+}
+
+.rightArrows {
+  display: flex;
+  justify-content: right;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 5vw;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+  background-color: white;
+}
